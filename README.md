@@ -1,4 +1,4 @@
 
-# websiteDevMicrosystem
+# Website Dev Microsystem
 
-Website - Dev Microsystem S.A.S
+© 2013 Dev Microsystem S.A.S
