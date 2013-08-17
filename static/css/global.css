@@ -98,3 +98,8 @@ h1 {
     bottom:2em;
     left:5em;
 }
+
+/* content */
+.content {
+    margin: 80px 0;
+}

@@ -12,8 +12,13 @@ from view import render
 
 
 class index:
-    def GET(self):
+    def GET (self):
         return render.base(render.index())
+
+class contact:
+    def GET (self):
+        #return render.base("Contact Us", "Contáctenos")
+        return render.base(render.contact("Contáctenos"), "Contáctenos")
 
 
 if __name__ == "__main__":
