@@ -1,4 +1,4 @@
-$def with(menu, path, page, title=None)
+$def with(page, title=None)
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -42,7 +42,6 @@ $def with(menu, path, page, title=None)
           <div class="navbar-inner">
             <div class="container">
               <ul class="nav">
-                <!--
                 <li class="active"><a href="/">Home</a></li>
                 <li><a href="#">Soluciones</a></li>
                 <li><a href="#">Servicios</a></li>
@@ -50,12 +49,6 @@ $def with(menu, path, page, title=None)
                 <li><a href="#">Conocimiento</a></li>
                 <li><a href="#">Sobre Dev</a></li>
                 <li><a href="/contact">Contáctenos</a></li>
-                -->
-                $for i in menu():
-                    $if i[1] == path:
-                        <li class="active"><a href="$i[1]">$i[0]</a></li>
-                    $else:
-                        <li><a href="$i[1]">$i[0]</a></li>
               </ul>
             </div>
           </div>
