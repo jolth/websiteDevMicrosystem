@@ -69,18 +69,7 @@ $def with(menu, path, page, title=None)
       <hr>
 
       <div class="footer">
-        <div class="social-aside">
-         <ul id="social">
-          <li><a href="https://twitter.com/devmicrosystem" id="tw" rel="nofollow" target="_blank">Twitter</a></li>
-          <li class="space"><a href="https://www.facebook.com/devmicrosystem" id="fb" rel="nofollow" target="_blank">Facebook</a></li>
-          <li class="space"><a href="https://profiles.google.com/103518004460450152079/about/?rel=author" id="plus" rel="me author" target="_blank">Google+</a></li>
-          <li class="space"><a href="http://feeds.feedburner.com/Dev" id="rss" rel="nofollow" target="_blank">RSS</a></li>
-         </ul>    
-         <div class="clear"></div>
-        </div>
-        <div class="copy">
-         <p>&copy; 2013 Dev Microsystem S.A.S. All Rights Reserved.</p>
-        </div>
+        <p>&copy; 2013 Dev Microsystem S.A.S. All Rights Reserved.</p>
       </div>
     </div> <!-- /container -->
 

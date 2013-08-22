@@ -24,7 +24,7 @@ def notfound():
 
 class index:
     def GET (self):
-        print web.ctx.path
+        #print web.ctx.path
         #return render.base(render.index())
         #return render.base(menu(iweb.ctx.path), render.index())
         return render.base(menu, web.ctx.path, render.index())
@@ -32,7 +32,7 @@ class index:
 class contact:
     def GET (self):
         #return render.base("Contact Us", "Contáctenos")
-        print web.ctx.path
+        #print web.ctx.path
         #return render.base(menu(), render.contact("Contáctenos"), "Contáctenos")
         return render.base(menu, web.ctx.path, render.contact("Contáctenos"), "Contáctenos")
 
