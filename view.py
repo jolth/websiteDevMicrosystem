@@ -1,23 +1,14 @@
 # -*- coding: utf-8 -*-
 import web
+import config
 
 render = web.template.render("templates/")
+#render = web.template.render("templates/", cache=config.cache)
 
-
-#def menu (item=None):
 def menu ():
-    #items = {
-    #    "Home":"/",
-    #    "Soluciones":"/solutions",
-    #    "Servicios":"/services",
-    #    "Productos":"/products",
-        #"Conocimiento":"",
-        #"Formación":"/training",
-    #    "Formacion":"/training",
-    #    "Sobre Dev":"/about",
-        #"Contáctenos":"/contact"
-    #    "Contactenos":"/contact"
-    #}
+    """
+        Menu principal 
+    """
     items = [
         ("Home","/",1),
         ("Soluciones","/solutions",2),
@@ -29,5 +20,4 @@ def menu ():
         ("Dev","/about",6),
         ("Contáctenos","/contact",7)
     ]
-    #return items
     return sorted(items, key=lambda item: item[2]) # sort by num
