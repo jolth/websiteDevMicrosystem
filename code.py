@@ -8,6 +8,7 @@
 """
 import web
 from urls import urls
+import view
 from view import render, menu
 
 #app = web.application(urls, globals())
@@ -34,7 +35,9 @@ class contact:
         #return render.base("Contact Us", "Contáctenos")
         #print web.ctx.path
         #return render.base(menu(), render.contact("Contáctenos"), "Contáctenos")
-        return render.base(menu, web.ctx.path, render.contact("Contáctenos"), "Contáctenos")
+
+        #return render.base(menu, web.ctx.path, render.contact("Contáctenos"), "Contáctenos")
+        return render.base(menu, web.ctx.path, render.contact(view.listCountries()))
 
 
 if __name__ == "__main__":

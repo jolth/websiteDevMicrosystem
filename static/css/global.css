@@ -74,6 +74,7 @@ body {
 .copy {
     font-size: .8em;
 }
+
 /*.clear:after {*/
 .clear {
     clear: both;
@@ -177,7 +178,15 @@ h1 {
     margin: 80px 0;
 }
 
-/* menu */
-/*a.selection {
-    color:rgb(143,197,0);
-}*/
+/* contact */
+#form .table {
+    display: table;
+}
+#form .row {
+    display: table-row;
+}
+#form .cell {
+    display: table-cell;
+}
+#form div.left {padding-left:2em;}
+#form textarea {width:33em;}

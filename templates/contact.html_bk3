@@ -1,0 +1,20 @@
+$def with (countries)
+      <div class="content">
+       <h2>Contáctenos</h2>
+       <p>Si tiene preguntas o inquietudes acerca de las soluciones, productos o servicios de la compañia o el sitio web en general, por favor póngase en contacto con nosotros a través del siguiente formulario.</p>
+      </div>
+      <!--<hr>-->
+      <div id="form">
+        <form>
+         <fieldset>
+          <!--<legend>Formulario de Contacto.</legend>-->
+          <legend>Preguntas o inquietudes:</legend>
+          <label>Nombre *</label>
+          <input type="text" placeholder="Sus nombres…">
+          <label>Apellidos *</label>
+          <input type="text" placeholder="Sus apellios…">
+          <label>Correo *</label>
+          <input type="email" placeholder="test@example.com">
+         </fieldset>
+        </form>
+      </div>

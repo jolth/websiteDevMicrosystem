@@ -1,6 +1,44 @@
-$def with (s)
+$def with (countries)
       <div class="content">
-       <h2>$s</h2>
+       <h2>Contáctenos</h2>
        <p>Si tiene preguntas o inquietudes acerca de las soluciones, productos o servicios de la compañia o el sitio web en general, por favor póngase en contacto con nosotros a través del siguiente formulario.</p>
       </div>
-      <hr>
+      <!--<hr>-->
+      <div id="form">
+        <form>
+         <fieldset>
+         <!--<legend>Formulario de Contacto.</legend>-->
+          <legend>Preguntas o inquietudes:</legend>
+          <!--<div class="table">-->
+          <div class="row">
+           <div class="cell">
+            <label>Nombre *</label>
+            <input type="text" placeholder="Sus nombres…">
+           </div>
+           <div class="cell left">
+            <label>Apellidos *</label>
+            <input type="text" placeholder="Sus apellios…">
+           </div>
+          </div>
+          <!--</div>-->
+          <label>Correo *</label>
+          <input type="email" placeholder="test@example.com">
+          <label>Teléfono *</label>
+          <input type="email" placeholder="Teléfono de contacto">
+          <label>País *</label>
+          <select>
+           <!--<option value="" selected="selected">- Seleccione -</option>-->
+           <option value="">- Seleccione -</option>
+           $for i in countries:
+            <option value="$i.code">$i.name.capitalize()</option>
+          </select>
+          <label>Tema *</label>
+          <select>
+           <option value="">- Seleccione -</option>
+          </select>
+          <span class="help-inline">¿Cuál es la naturaleza de su mensaje?</span>
+          <label>Mensaje *</label>
+          <textarea rows="3"></textarea>
+         </fieldset>
+        </form>
+      </div>
